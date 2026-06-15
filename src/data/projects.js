@@ -1,7 +1,4 @@
-import './Projects.css'
-import ProjectCard from './ProjectCard'
-
-const projects = [
+export const projects = [
   {
     title: 'Portfolio Website',
     description:
@@ -24,18 +21,3 @@ const projects = [
     status: 'Planned',
   },
 ]
-
-function Projects() {
-  return (
-    <section id="projects" className="section projects">
-      <h2>Projects</h2>
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
-      </div>
-    </section>
-  )
-}
-
-export default Projects

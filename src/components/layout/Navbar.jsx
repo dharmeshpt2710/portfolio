@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
+import { navLinks } from '@/data/navLinks'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,10 +24,11 @@ function Navbar() {
         </button>
 
         <nav className={`navbar-links${isOpen ? ' open' : ''}`}>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#skills" onClick={closeMenu}>Skills</a>
-          <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#contact" onClick={closeMenu}>Contact</a>
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} onClick={closeMenu}>
+              {link.label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
