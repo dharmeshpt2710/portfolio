@@ -34,7 +34,11 @@ not marketing-speak or obviously AI-generated.
 
 ## Candidate Profile (source of truth for all site content)
 
-Use these facts to write accurate copy. Do not invent achievements beyond this.
+Use these confirmed facts to write accurate copy. The work history, education, and
+skill list below come directly from the owner's resume (provided 2026-06-15) and are
+the baseline. For anything still not covered here (project descriptions, what to
+feature, additional context), Claude Code must ask the owner rather than inventing or
+inferring it.
 
 **Headline:** Full Stack Developer and QA Automation Engineer, 4+ years experience.
 
@@ -43,32 +47,63 @@ Use these facts to write accurate copy. Do not invent achievements beyond this.
 **Current status:** Actively seeking full-time roles. Returned to India in 2026 after
 a Canadian Post-Graduate Work Permit expired.
 
-**Core experience**
-- Close to 3 years at Innosoft Canada (Kitchener, Ontario) as QA Developer I on a large enterprise ERP product called Fusion (a .NET Web Forms application).
-- Built and maintained a Playwright automation suite in TypeScript using the Page Object Model, including an AI-assisted test generation pipeline.
-- Led a Selenium to Playwright migration.
-- Performance testing with k6, accessibility testing to WCAG standards with NVDA, API testing with Postman and Swagger.
-- Root cause analysis through IIS logs and server configuration.
-- Mentored a junior colleague across a timezone gap. Documented knowledge in Guru cards.
-
-**Earlier development experience**
-- Concept Learning: Angular migration work using NGRX for state management.
-- InheritChain: freelance full stack developer on the MEAN stack (MongoDB, Express, Angular, Node.js).
-
-**Education:** Post-Graduate diploma, Conestoga College, Canada.
-
-**Technical skills**
-- Frontend: React (learning, this project), Angular, TypeScript, JavaScript, HTML, CSS, NGRX
-- Backend: Node.js, Express, MongoDB
-- QA and Automation: Playwright, Selenium, k6, Postman, Swagger, WCAG accessibility
-- Tools and platforms: Git, GitHub, Azure DevOps, Jira, CI/CD pipelines, SQL Server
-- AI-assisted development: GitHub Copilot, MCP servers for test generation
-
-**Contact and links** (fill in actual values during build)
-- Email: [to be provided]
+**Contact and links**
+- Email: dharmeshpt87@gmail.com
+- Phone: +91 99256 42153 (on resume; confirm with owner before showing this publicly on the site)
+- LinkedIn: <https://linkedin.com/in/dharmeshpt87>
 - GitHub: <https://github.com/dharmeshpt2710>
-- LinkedIn: [URL to be provided]
 - Resume: [link or PDF to be added to the site]
+
+**Education**
+- Conestoga College, Waterloo, ON, Canada. Post-Graduate program in Mobile Solutions Development. Jan 2022 - Apr 2023. CGPA 9.65.
+- Devang Patel Institute of Advance Technology and Research, CHARUSAT University, Gujarat, India. Bachelor of Technology, Information Technology. Jul 2017 - May 2021. CGPA 8.05.
+
+**Work experience (most recent first)**
+
+1. QA Developer I, Innosoft Canada Inc., Kitchener, ON, Canada. July 2023 - April 2026.
+   - Built and maintained Playwright and Selenium automated test suites for Fusion, Innosoft's enterprise ERP (a .NET Web Forms application), expanding front-end GUI and API test coverage and cutting manual regression cycles.
+   - Authored Agile test plans and executed release-cycle testing covering functional, regression, and k6 performance testing, catching defects and surfacing bottlenecks before production releases.
+   - Validated backend data integrity by writing SQL queries and running SQL Profiler, executing developer-provided scripts against the instance database to confirm consistency between database state and frontend behavior.
+   - Participated in user story reviews, authored requirements traceability documentation, and collaborated with product managers and developers to align test coverage with acceptance criteria.
+   - Tracked and closed bugs in JIRA and Zendesk with documented reproduction steps, severity tags, and owner follow-up.
+   - Built a GenAI-powered Playwright codegen-to-POM conversion pipeline using Claude AI, eliminating the manual script restructuring step and reducing new test authoring time.
+   - Mentored peers on test automation patterns and quality engineering practices, contributing to team-wide adoption of structured testing workflows.
+   - From prior conversation, not on the resume (confirm with owner before using in site copy): led a Selenium to Playwright migration, accessibility testing to WCAG standards with NVDA, root cause analysis through IIS logs and server configuration, and mentoring a junior colleague across a timezone gap with knowledge documented in Guru cards.
+
+2. Junior Full Stack Developer (Freelance), InheritChain, ON, Canada. June 2023 - Dec 2023.
+   - Built and deployed a full-stack web application on the MEAN stack (MongoDB, Express.js, Angular v12, Node.js), delivering a production-ready product from scratch.
+   - Designed and implemented RESTful APIs connecting the Angular frontend to the Node.js/MongoDB backend, validating contracts end to end with Postman.
+   - Translated client requirements into sprint tasks within an Agile workflow, adjusting scope as priorities shifted to deliver on time.
+
+3. Software Developer (CO-OP), Conestoga Applied Research and Innovation, Cambridge, ON. Sept 2022 - Dec 2022.
+   - Designed UI/UX prototypes for a food ordering system in Adobe XD and drove the Flutter/Node.js frontend build from those specs.
+   - Onboarded and supported part-time team members, shortening their ramp-up on the project.
+
+4. Software Engineer, Concept Learning Pvt. Ltd., Gujarat, India. May 2021 - Apr 2022.
+   - Migrated the company admin website from AngularJS to Angular 11, modernizing a legacy codebase and reducing long-term maintenance overhead.
+   - Added Jasmine/Karma unit tests covering component-level behavior, catching bugs earlier in the development cycle.
+   - Centralized application state with NGRX Store, ensuring consistent UI behavior across all user flows.
+   - Co-developed a companion Angular 11 application with the UI/UX team, delivering design-to-code end to end.
+
+5. Software Engineer (CO-OP), Concept Learning Pvt. Ltd., Gujarat, India. Jan 2021 - Apr 2021.
+   - Migrated a B2B website from AngularJS to Angular 8, adding mobile-responsive layouts to extend the product to all screen sizes.
+   - Validated API contracts in Postman and refactored stylesheets to SCSS, reducing duplication and improving maintainability.
+
+6. Software Engineer (CO-OP), Anandorja LLP, Gujarat, India. May 2019 - May 2020.
+   - Built a Yojana website from scratch using Angular and Node.js, collaborating directly with the technical lead and company founders to meet spec.
+   - Wrote and tested RESTful backend APIs using Node.js and Express.js.
+   - Deployed the production site and managed version control with Git across the full project lifecycle.
+
+**Technical skills shown on this portfolio** (full resume inventory; owner chose to
+show everything rather than a curated subset, organized for the Skills section)
+- Frontend: React (learning, this project), Angular, NGRX, JavaScript, TypeScript, HTML, CSS, SCSS
+- Backend and Databases: Node.js, Express, .NET (C#), MongoDB, SQL Server, MySQL, Firebase Realtime Database
+- Mobile Development: Flutter, Dart, Kotlin, Swift, Android Studio, Xcode
+- QA and Automation: Playwright, Selenium, k6, NUnit, Jasmine/Karma, Postman, Swagger, WCAG accessibility
+- Tools and Platforms: Git, GitHub, Bitbucket, Azure DevOps, Jira, Zendesk, SQL Profiler, CI/CD, Adobe XD
+- AI-Assisted Development: GitHub Copilot, MCP servers (test generation), Claude AI (GenAI)
+- Other Languages: C#, Python, Java
+- Other: Agile/Scrum, Linux, macOS, Windows
 
 ---
 
@@ -178,7 +213,9 @@ React app is organized. This makes the codebase look professional and maintainab
 **Goal:** Replace the Skills placeholder with a real, scannable skills layout.
 
 **Tasks**
-1. Group skills into categories: Frontend, Backend, QA and Automation, Tools and Platforms.
+1. Group skills into categories. Owner chose to show the full resume skill set (not
+   just a focused subset): Languages, Frontend, Backend and Databases, Mobile
+   Development, QA and Automation, Tools and Platforms, AI-Assisted Development, Other.
 2. Render each category with its skills as tags or pills (small rounded labels), or as a clean grid.
 3. Pull the skill list from the Candidate Profile section above.
 4. Style the tags using the design system colors. Accent border or subtle surface background.
@@ -334,5 +371,5 @@ project beats an unfinished perfect site that never ships.
 - Keep components small and readable. Prefer clarity over cleverness.
 - Use the design system variables, do not hardcode colors.
 - Do not use em dashes in any site copy.
-- Do not invent profile facts. If something is unknown (a real GitHub link, email), leave a clearly marked placeholder and ask.
+- Do not invent or assume profile facts (employers, roles, dates, skills, links, etc.). If the Candidate Profile section is empty, ask the owner for a resume or detailed summary before writing related copy. If something is still unknown, leave a clearly marked placeholder and ask.
 - Commit to git after each working phase with a clear message.

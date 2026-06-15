@@ -1,0 +1,32 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  margin: 0 0 14px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-body);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.skill-tag-growth {
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
