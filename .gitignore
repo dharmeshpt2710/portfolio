@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Local-only project reference (contains personal D: drive paths)
+project-sources.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
