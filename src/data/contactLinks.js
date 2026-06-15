@@ -3,5 +3,3 @@ export const contactLinks = [
   { id: 'github', href: 'https://github.com/dharmeshpt2710', label: 'GitHub', external: true },
   { id: 'linkedin', href: 'https://linkedin.com/in/dharmeshpt87', label: 'LinkedIn', external: true },
 ]
-
-export const resumeFile = 'Dharmesh_Resume.pdf'
