@@ -1,0 +1,25 @@
+.hero {
+  text-align: center;
+  padding: 100px 0 80px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 12px;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-tagline {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin: 0 0 8px;
+}
+
+.hero-location {
+  color: var(--color-text-muted);
+  margin: 0;
+}

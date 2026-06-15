@@ -1,0 +1,77 @@
+:root {
+  /* Design system colors (see guide.md) */
+  --color-bg: #0f1419;
+  --color-surface: #1a1f27;
+  --color-border: #2a2f38;
+  --color-text: #ffffff;
+  --color-text-body: #b0b8c0;
+  --color-text-muted: #7a828c;
+  --gradient-start: #4fc3f7;
+  --gradient-end: #15808c;
+  --color-accent: #15808c;
+
+  /* Layout */
+  --content-width: 900px;
+
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color-scheme: dark;
+  color: var(--color-text-body);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+/* Shared layout primitives, used by multiple components */
+
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin: 0 0 20px;
+}
+
+.section p {
+  color: var(--color-text-body);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
