@@ -1,33 +1,95 @@
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 24px;
+.contact .section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 8px;
 }
 
-.contact-link {
+.contact h2 {
+  font-size: 1.8rem;
+  margin: 0 0 12px;
+}
+
+.contact-intro {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  margin: 0 0 32px;
+  max-width: 520px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.contact-card {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
-  border-radius: 8px;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--surface);
   border: 1px solid var(--border);
-  background-color: var(--surface);
-  color: var(--text-body);
+  border-radius: var(--radius-lg);
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.contact-link:hover,
-.contact-link:focus-visible {
+.contact-card:hover {
   border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(21, 128, 140, 0.1);
+  transform: translateX(4px);
+}
+
+.contact-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-gradient);
+  color: #06222a;
+  flex-shrink: 0;
+}
+
+.contact-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-card-label {
+  font-size: 0.875rem;
+  font-weight: 600;
   color: var(--text-primary);
 }
 
-.contact-icon {
-  width: 20px;
-  height: 20px;
+.contact-card-sublabel {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-card-arrow {
+  color: var(--text-muted);
   flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-card:hover .contact-card-arrow {
+  color: var(--accent-light);
+  transform: translateX(3px);
+}
+
+@media (max-width: 640px) {
+  .contact-cards {
+    max-width: 100%;
+  }
 }
