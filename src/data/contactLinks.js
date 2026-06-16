@@ -6,6 +6,12 @@ export const contactLinks = [
     sublabel: 'dharmeshpt87@gmail.com',
   },
   {
+    id: 'phone',
+    href: 'tel:+919925642153',
+    label: 'Phone',
+    sublabel: '+91 99256 42153',
+  },
+  {
     id: 'github',
     href: 'https://github.com/dharmeshpt2710',
     label: 'GitHub',

@@ -16,7 +16,7 @@ const DESCRIPTIONS = {
     'End-to-end test suites with Playwright and Selenium, performance testing with k6, and AI-assisted development.',
 }
 
-function PillRow({ skills }) {
+function PillRow({ skills, label }) {
   const ref = useRef(null)
   const drag = useRef({ active: false, startX: 0, scrollLeft: 0 })
 
@@ -38,14 +38,23 @@ function PillRow({ skills }) {
     ref.current?.classList.remove('dragging')
   }
 
+  const onKeyDown = (e) => {
+    if (e.key === 'ArrowRight') ref.current.scrollLeft += 60
+    if (e.key === 'ArrowLeft') ref.current.scrollLeft -= 60
+  }
+
   return (
     <div
       ref={ref}
       className="skill-pills"
+      role="region"
+      aria-label={`${label} skills`}
+      tabIndex={0}
       onMouseDown={onMouseDown}
       onMouseMove={onMouseMove}
       onMouseUp={stopDrag}
       onMouseLeave={stopDrag}
+      onKeyDown={onKeyDown}
     >
       {skills.map(({ name, learning }) => (
         <span
@@ -74,7 +83,7 @@ function Skills() {
               </div>
               <h3>{title}</h3>
               <p className="skill-desc">{DESCRIPTIONS[title]}</p>
-              <PillRow skills={skills} />
+              <PillRow skills={skills} label={title} />
             </div>
           )
         })}

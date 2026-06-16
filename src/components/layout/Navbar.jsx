@@ -1,11 +1,29 @@
-import { useState } from 'react'
-import { FiDownload, FiMenu, FiX } from 'react-icons/fi'
+import { useState, useEffect } from 'react'
+import { FiMenu, FiX, FiDownload } from 'react-icons/fi'
 import './Navbar.css'
 import { navLinks } from '@/data/navLinks'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [activeId, setActiveId] = useState('')
   const close = () => setIsOpen(false)
+
+  useEffect(() => {
+    const ids = navLinks.map((l) => l.href.slice(1))
+    const sections = ids.map((id) => document.getElementById(id)).filter(Boolean)
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveId(entry.target.id)
+        })
+      },
+      { rootMargin: '-30% 0px -65% 0px', threshold: 0 }
+    )
+
+    sections.forEach((s) => observer.observe(s))
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <header className="navbar">
@@ -26,11 +44,17 @@ function Navbar() {
 
         <nav className={`navbar-links${isOpen ? ' open' : ''}`}>
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="navbar-nav-link" onClick={close}>
+            <a
+              key={link.href}
+              href={link.href}
+              className={`navbar-nav-link${activeId === link.href.slice(1) ? ' active' : ''}`}
+              aria-current={activeId === link.href.slice(1) ? 'true' : undefined}
+              onClick={close}
+            >
               {link.label}
             </a>
           ))}
-          <a href="/resume.pdf" className="navbar-resume" download aria-label="Download resume">
+          <a href="/Dharmesh_Resume.pdf" className="navbar-resume" download aria-label="Download resume">
             <FiDownload size={14} aria-hidden="true" />
             Resume
           </a>

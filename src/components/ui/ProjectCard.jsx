@@ -42,7 +42,7 @@ function ProjectCard({ title, description, tags, githubUrl, demoUrl, status, num
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-title-github"
-                aria-label={`${title} GitHub repository`}
+                aria-label={`View ${title} on GitHub`}
               >
                 <FiGithub size={13} />
               </a>
@@ -54,10 +54,17 @@ function ProjectCard({ title, description, tags, githubUrl, demoUrl, status, num
           <div
             ref={descRef}
             className="project-desc-wrap"
+            role="region"
+            aria-label={`${title} description`}
+            tabIndex={0}
             onMouseDown={onMouseDown}
             onMouseMove={onMouseMove}
             onMouseUp={stopDrag}
             onMouseLeave={stopDrag}
+            onKeyDown={(e) => {
+              if (e.key === 'ArrowDown') descRef.current.scrollTop += 40
+              if (e.key === 'ArrowUp') descRef.current.scrollTop -= 40
+            }}
           >
             <p className="project-desc">{description}</p>
           </div>
@@ -73,8 +80,8 @@ function ProjectCard({ title, description, tags, githubUrl, demoUrl, status, num
         </div>
         {demoUrl && (
           <div className="project-links">
-            <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-              <FiExternalLink size={13} /> Demo
+            <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={`View ${title} live demo`}>
+              <FiExternalLink size={13} aria-hidden="true" /> Demo
             </a>
           </div>
         )}

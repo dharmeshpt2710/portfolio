@@ -1,7 +1,6 @@
 .hero {
   position: relative;
   padding: 80px 0 100px;
-  overflow: hidden;
 }
 
 /* Dotted grid background texture */
@@ -36,6 +35,18 @@
   font-size: 0.8rem;
   color: var(--status);
   margin-bottom: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-status:hover {
+  background: rgba(61, 220, 151, 0.16);
+  border-color: rgba(61, 220, 151, 0.5);
+}
+
+.hero-status-phone {
+  opacity: 0.75;
 }
 
 .status-dot {
@@ -146,6 +157,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  overflow: hidden;
 }
 
 .hero-avatar-wrap {

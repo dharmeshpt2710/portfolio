@@ -9,7 +9,7 @@ const stats = [
 
 function Stats() {
   return (
-    <section className="section stats">
+    <section className="section stats" aria-label="Career highlights">
       <div className="stats-row">
         {stats.map((s) => (
           <div className="stat-tile" key={s.label}>

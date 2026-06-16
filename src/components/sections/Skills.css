@@ -11,6 +11,10 @@
   margin: 0 0 32px;
 }
 
+.skills {
+  border-bottom: none;
+}
+
 .skills-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

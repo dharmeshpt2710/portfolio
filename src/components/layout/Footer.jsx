@@ -1,12 +1,33 @@
 import './Footer.css'
+import { FiGithub, FiLinkedin } from 'react-icons/fi'
 
 function Footer() {
   const year = new Date().getFullYear()
 
   return (
     <footer className="footer">
-      <div className="container">
-        <p>&copy; {year} Dharmesh Patel. Built with React.</p>
+      <div className="container footer-inner">
+        <p>&copy; {year} Dharmesh Patel.</p>
+        <div className="footer-social">
+          <a
+            href="https://github.com/dharmeshpt2710"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-social-link"
+            aria-label="GitHub"
+          >
+            <FiGithub size={18} />
+          </a>
+          <a
+            href="https://linkedin.com/in/dharmeshpt87"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-social-link"
+            aria-label="LinkedIn"
+          >
+            <FiLinkedin size={18} />
+          </a>
+        </div>
       </div>
     </footer>
   )

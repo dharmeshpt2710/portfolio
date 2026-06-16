@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiArrowRight } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiArrowRight, FiPhone } from 'react-icons/fi'
 import './Hero.css'
 
 function Hero() {
@@ -6,12 +6,13 @@ function Hero() {
     <section id="hero" className="hero">
       <div className="hero-inner">
         <div className="hero-left">
-          <div className="hero-status">
+          <a href="tel:+919925642153" className="hero-status" aria-label="Call now">
             <span className="status-dot" aria-hidden="true" />
             Available for work
-          </div>
+            <FiPhone size={11} className="hero-status-phone" aria-hidden="true" />
+          </a>
 
-          <p className="hero-eyebrow">Hello, I am</p>
+          <p className="hero-eyebrow">4+ years building and breaking software</p>
           <h1 className="hero-name">Dharmesh Patel</h1>
           <p className="hero-tagline">
             Full Stack Developer <span className="hero-amp">&amp;</span> QA Automation Engineer
@@ -47,7 +48,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hero-right">
+        <div className="hero-right" aria-hidden="true">
           <div className="hero-avatar-wrap">
             <div className="hero-avatar-dashed" aria-hidden="true" />
             <div className="hero-avatar">

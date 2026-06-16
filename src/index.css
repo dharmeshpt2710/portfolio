@@ -65,8 +65,25 @@ a {
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--accent-light);
-  outline-offset: 2px;
-  border-radius: 2px;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 10px 20px;
+  background: var(--accent-gradient);
+  color: #06222a;
+  font-weight: 600;
+  font-size: 0.875rem;
+  z-index: 9999;
+  border-radius: 0 0 var(--radius-sm) 0;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 .container {
@@ -101,6 +118,18 @@ button:focus-visible {
   }
 }
 
+/* ── Scroll entrance animations ── */
+.will-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.will-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -109,5 +138,11 @@ button:focus-visible {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .will-animate {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
