@@ -5,10 +5,15 @@ import { projects } from '@/data/projects'
 function Projects() {
   return (
     <section id="projects" className="section projects">
-      <h2>Projects</h2>
+      <p className="section-label">02 / WHAT I'VE BUILT</p>
+      <h2>My projects</h2>
       <div className="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
+        {projects.map((project, i) => (
+          <ProjectCard
+            key={project.title}
+            {...project}
+            number={String(i + 1).padStart(2, '0')}
+          />
         ))}
       </div>
     </section>
