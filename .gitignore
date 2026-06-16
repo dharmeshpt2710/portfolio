@@ -12,7 +12,9 @@ dist
 dist-ssr
 *.local
 
-# Local-only project reference (contains personal D: drive paths)
+# Local-only guides and project reference files
+PORTFOLIO_BUILD_GUIDE_MODERN.md
+guide.md
 project-sources.md
 
 # Editor directories and files
