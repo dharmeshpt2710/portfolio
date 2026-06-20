@@ -54,7 +54,7 @@ function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="/Dharmesh_Resume.pdf" className="navbar-resume" download aria-label="Download resume">
+          <a href={`${import.meta.env.BASE_URL}Dharmesh_Resume.pdf`} className="navbar-resume" download aria-label="Download resume">
             <FiDownload size={14} aria-hidden="true" />
             Resume
           </a>

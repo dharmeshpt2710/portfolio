@@ -1,17 +1,19 @@
 :root {
   --bg: #0f1419;
   --bg-alt: #11161d;
-  --surface: #161b23;
-  --border: #2a2f38;
-  --border-faint: #1f242c;
-  --text-primary: #ffffff;
-  --text-body: #b0b8c0;
-  --text-muted: #7a828c;
+  --surface: #161d24;
+  --border: #232c35;
+  --border-faint: #1d242c;
+  --text-primary: #e8edf2;
+  --text-body: #b6c2cd;
+  --text-muted: #8794a1;
   --accent: #15808c;
+  --accent-deep: #0c5a64;
   --accent-light: #4fc3f7;
   --accent-soft: #9fe7ee;
   --accent-gradient: linear-gradient(135deg, #4fc3f7, #15808c);
   --status: #3ddc97;
+  --mono: 'JetBrains Mono', monospace;
   --radius-sm: 8px;
   --radius-md: 11px;
   --radius-lg: 14px;

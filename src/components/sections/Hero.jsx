@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiArrowRight, FiPhone } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail, FiFileText } from 'react-icons/fi'
 import './Hero.css'
 
 function Hero() {
@@ -6,26 +6,50 @@ function Hero() {
     <section id="hero" className="hero">
       <div className="hero-inner">
         <div className="hero-left">
-          <a href="tel:+919925642153" className="hero-status" aria-label="Call now">
-            <span className="status-dot" aria-hidden="true" />
-            Available for work
-            <FiPhone size={11} className="hero-status-phone" aria-hidden="true" />
-          </a>
+          <p className="section-eyebrow">&gt; INTRO</p>
 
-          <p className="hero-eyebrow">4+ years building and breaking software</p>
+          <div className="hero-monogram" aria-hidden="true">
+            <span className="hero-monogram-text">DP</span>
+          </div>
+
           <h1 className="hero-name">Dharmesh Patel</h1>
           <p className="hero-tagline">
-            Full Stack Developer <span className="hero-amp">&amp;</span> QA Automation Engineer
+            QA / SDET Engineer <span className="hero-amp">&amp;</span> Software Developer
           </p>
+          <p className="hero-location">Anand, Gujarat</p>
+
+          <span className="hero-status">
+            <span className="status-dot" aria-hidden="true" />
+            Open to QA / SDET and Software Developer roles
+          </span>
+
           <p className="hero-intro">
-            I build software, and I make sure it holds up. Based in Anand, Gujarat. Available immediately for remote, hybrid, or on-site roles.
+            I test and build enterprise web applications across the full SDLC.
+            Three years on a Canadian ERP product, owning the Playwright
+            automation that kept releases stable while shipping features in .NET
+            and Angular.
           </p>
 
           <div className="hero-actions">
-            <a href="#contact" className="btn-primary">
-              Get in touch <FiArrowRight size={15} aria-hidden="true" />
+            <a
+              href={`${import.meta.env.BASE_URL}Dharmesh_Resume.pdf`}
+              className="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiFileText size={15} aria-hidden="true" />
+              View resume
             </a>
             <div className="hero-social-links">
+              <a
+                href="https://linkedin.com/in/dharmeshpt87"
+                className="hero-social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                <FiLinkedin size={18} aria-hidden="true" />
+              </a>
               <a
                 href="https://github.com/dharmeshpt2710"
                 className="hero-social-link"
@@ -36,26 +60,13 @@ function Hero() {
                 <FiGithub size={18} aria-hidden="true" />
               </a>
               <a
-                href="https://linkedin.com/in/dharmeshpt87"
+                href="mailto:dharmeshpt87@gmail.com"
                 className="hero-social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn profile"
+                aria-label="Send email"
               >
-                <FiLinkedin size={18} aria-hidden="true" />
+                <FiMail size={18} aria-hidden="true" />
               </a>
             </div>
-          </div>
-        </div>
-
-        <div className="hero-right" aria-hidden="true">
-          <div className="hero-avatar-wrap">
-            <div className="hero-avatar-dashed" aria-hidden="true" />
-            <div className="hero-avatar">
-              <span className="hero-avatar-initials">DP</span>
-            </div>
-            <span className="hero-sparkle hero-sparkle-1" aria-hidden="true">✦</span>
-            <span className="hero-sparkle hero-sparkle-2" aria-hidden="true">✦</span>
           </div>
         </div>
       </div>
