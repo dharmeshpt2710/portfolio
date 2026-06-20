@@ -1,10 +1,10 @@
 import './Stats.css'
 
 const stats = [
-  { value: '4+', label: 'Years experience' },
-  { value: '3', label: 'Years in Canada' },
-  { value: '2', label: 'Roles in one' },
-  { value: '100%', label: 'Ownership mindset' },
+  { value: '3+', label: 'Years across QA and dev' },
+  { value: '40+', label: 'Playwright and Selenium tests' },
+  { value: '50+', label: 'Defects caught before production' },
+  { value: '~30%', label: 'Faster test authoring with GenAI' },
 ]
 
 function Stats() {
