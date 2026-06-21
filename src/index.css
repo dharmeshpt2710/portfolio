@@ -109,6 +109,16 @@ button:focus-visible {
   margin: 0 0 20px;
 }
 
+.section .section-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-light);
+  margin: 0 0 28px;
+}
+
 .section p {
   color: var(--text-body);
   line-height: 1.7;

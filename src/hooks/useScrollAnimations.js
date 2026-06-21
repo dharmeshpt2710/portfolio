@@ -17,16 +17,22 @@ export function useScrollAnimations() {
           }
         })
       },
-      { threshold: 0.12 }
+      { threshold: 0.22 }
     )
 
     targets.forEach((el) => {
-      // Stagger delay based on position within its grid parent
-      const siblings = Array.from(el.parentElement.children)
-      const index = siblings.indexOf(el)
-      el.style.transitionDelay = `${index * 80}ms`
+      if (!el.classList.contains('exp-item')) {
+        const siblings = Array.from(el.parentElement.children)
+        const index = siblings.indexOf(el)
+        el.style.transitionDelay = `${index * 80}ms`
+      }
       el.classList.add('will-animate')
-      observer.observe(el)
+    })
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        targets.forEach((el) => observer.observe(el))
+      })
     })
 
     return () => observer.disconnect()
