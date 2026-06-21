@@ -14,7 +14,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-link"
-            aria-label="GitHub"
+            aria-label="GitHub (opens in new tab)"
           >
             <FiGithub size={18} />
           </a>
@@ -23,7 +23,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-link"
-            aria-label="LinkedIn"
+            aria-label="LinkedIn (opens in new tab)"
           >
             <FiLinkedin size={18} />
           </a>

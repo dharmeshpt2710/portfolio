@@ -5,8 +5,8 @@ import { projects } from '@/data/projects'
 function Projects() {
   return (
     <section id="projects" className="section projects">
-      <p className="section-label">02 / WHAT I'VE BUILT</p>
-      <h2>My projects</h2>
+      <p className="section-eyebrow">&gt; PROJECTS</p>
+      <h2>What I've built</h2>
       <div className="projects-grid">
         {projects.map((project, i) => (
           <ProjectCard

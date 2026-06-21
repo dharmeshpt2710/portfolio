@@ -1,7 +1,14 @@
 import { useState, useEffect } from 'react'
-import { FiMenu, FiX, FiDownload } from 'react-icons/fi'
+import { FiMenu, FiX, FiDownload, FiHome, FiBriefcase, FiCode, FiMail, FiChevronRight } from 'react-icons/fi'
 import './Navbar.css'
 import { navLinks } from '@/data/navLinks'
+
+const NAV_ICONS = {
+  home: FiHome,
+  briefcase: FiBriefcase,
+  code: FiCode,
+  mail: FiMail,
+}
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -42,18 +49,26 @@ function Navbar() {
           {isOpen ? <FiX size={22} /> : <FiMenu size={22} />}
         </button>
 
-        <nav className={`navbar-links${isOpen ? ' open' : ''}`}>
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`navbar-nav-link${activeId === link.href.slice(1) ? ' active' : ''}`}
-              aria-current={activeId === link.href.slice(1) ? 'true' : undefined}
-              onClick={close}
-            >
-              {link.label}
-            </a>
-          ))}
+        <nav className={`navbar-links${isOpen ? ' open' : ''}`} aria-label="Main navigation">
+          {navLinks.map((link) => {
+            const Icon = NAV_ICONS[link.icon]
+            const isActive = activeId === link.href.slice(1)
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`navbar-nav-link${isActive ? ' active' : ''}`}
+                aria-current={isActive ? 'location' : undefined}
+                onClick={close}
+              >
+                <span className="nav-link-icon">
+                  <Icon size={16} aria-hidden="true" />
+                </span>
+                <span className="nav-link-label">{link.label}</span>
+                <FiChevronRight size={14} className="nav-link-arrow" aria-hidden="true" />
+              </a>
+            )
+          })}
           <a href={`${import.meta.env.BASE_URL}Dharmesh_Resume.pdf`} className="navbar-resume" download aria-label="Download resume">
             <FiDownload size={14} aria-hidden="true" />
             Resume

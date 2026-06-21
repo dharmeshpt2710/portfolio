@@ -9,7 +9,7 @@ export const projects = [
   {
     title: 'GoHealth',
     description:
-      'Healthcare appointment booking app built for a Conestoga College capstone (Jan–Apr 2023). React + Material UI frontend, Node.js/Express/MongoDB backend with JWT auth, covering doctor registration, appointment booking, and availability management.',
+      'Healthcare appointment booking app built for a Conestoga College capstone (Jan to Apr 2023). React + Material UI frontend, Node.js/Express/MongoDB backend with JWT auth, covering doctor registration, appointment booking, and availability management.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
     status: 'Capstone',
   },

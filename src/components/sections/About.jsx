@@ -3,8 +3,8 @@ import './About.css'
 function About() {
   return (
     <section id="about" className="section about">
-      <p className="section-label">01 / WHO I AM</p>
-      <h2>About me</h2>
+      <p className="section-eyebrow">&gt; ABOUT</p>
+      <h2>Who I am</h2>
 
       <p className="about-hook">
         I build software, and I make sure it holds up.
@@ -12,9 +12,9 @@ function About() {
 
       <p className="about-lead">
         I'm a Software Developer and QA Engineer based in Anand, Gujarat, with
-        over four years of experience across the full development lifecycle. My
+        3+ years of experience across the full development lifecycle. My
         core strength is the{' '}
-        <span className="kw">MEAN stack</span> — building web applications end
+        <span className="kw">MEAN stack</span>, building web applications end
         to end, designing <span className="kw">RESTful APIs</span> with{' '}
         <span className="kw">Node.js</span>,{' '}
         <span className="kw">Express</span>, and{' '}
@@ -43,7 +43,7 @@ function About() {
         <p>
           I built an <span className="kw">AI agent pipeline</span> that
           transforms raw recorded scripts into a structured{' '}
-          <span className="kw">Page Object Model</span> framework - evolving it
+          <span className="kw">Page Object Model</span> framework, evolving it
           from Copilot prompts into a multi-agent system, and adapting it to{' '}
           <span className="kw">Claude</span> to generate and refactor 20 test cases in two
           days during an internal hackathon.

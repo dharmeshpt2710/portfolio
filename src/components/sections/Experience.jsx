@@ -71,7 +71,7 @@ const experience = [
 
 function RoleBullets({ bullets }) {
   return (
-    <ul className="exp-bullets">
+    <ul className="exp-bullets" role="list">
       {bullets.map((b, i) => (
         <li key={i}>{b}</li>
       ))}
@@ -115,13 +115,13 @@ function Experience() {
   }, [])
 
   return (
-    <section id="experience" className="section experience">
-      <p className="section-eyebrow">&gt; EXPERIENCE</p>
-      <h2>Work history</h2>
+    <section id="experience" className="section experience" aria-labelledby="experience-heading">
+      <p className="section-eyebrow" aria-hidden="true">&gt; EXPERIENCE</p>
+      <h2 id="experience-heading">Work history</h2>
 
-      <div className="exp-timeline" ref={timelineRef}>
+      <ol className="exp-timeline" ref={timelineRef} role="list">
         {experience.map((job, i) => (
-          <div className="exp-item" key={i}>
+          <li className="exp-item" key={i}>
             <div className="exp-dot" aria-hidden="true" />
 
             {job.roles ? (
@@ -155,9 +155,9 @@ function Experience() {
                 <Tags tags={job.tags} />
               </>
             )}
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
   )
 }

@@ -5,7 +5,7 @@ export function useScrollAnimations() {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const targets = document.querySelectorAll(
-      '.skill-card, .project-card, .contact-card, .stat-tile'
+      '.skill-card, .edu-card, .contact-card, .stat-tile'
     )
 
     const observer = new IntersectionObserver(

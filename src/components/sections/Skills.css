@@ -1,34 +1,14 @@
-.section-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin: 0 0 8px;
-}
-
-.skills h2 {
-  font-size: 1.8rem;
-  margin: 0 0 32px;
-}
-
-.skills {
-  border-bottom: none;
-}
-
-.skills-cards {
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .skill-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 28px 24px;
+  padding: 24px;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -38,78 +18,35 @@
   box-shadow: 0 8px 24px rgba(21, 128, 140, 0.1);
 }
 
-.skill-icon-tile {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-sm);
-  background: var(--accent-gradient);
-  color: #06222a;
-  margin-bottom: 16px;
-  flex-shrink: 0;
+.skill-group-title {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-light);
+  margin: 0 0 14px;
 }
 
-.skill-card h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0 0 8px;
-  color: var(--text-primary);
-}
-
-.skill-card p {
-  font-size: 0.875rem;
-  color: var(--text-body);
-  margin: 0;
-  line-height: 1.65;
-}
-
-.skill-desc {
-  margin: 0 0 20px;
-  flex-shrink: 0;
-}
-
-.skill-pills {
+.skill-tags {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
   gap: 8px;
-  padding-bottom: 2px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  margin-top: auto;
-  cursor: grab;
-  user-select: none;
 }
 
-.skill-pills.dragging {
-  cursor: grabbing;
-}
-
-.skill-pills::-webkit-scrollbar {
-  display: none;
-}
-
-.skill-pill {
-  display: inline-block;
-  padding: 4px 11px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
+.skill-tag {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  padding: 4px 12px;
   background: var(--bg);
-  color: var(--text-muted);
-  font-size: 0.78rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-body);
   white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.skill-pill-learning {
-  border-color: var(--accent);
-  color: var(--accent-soft);
 }
 
 @media (max-width: 640px) {
-  .skills-cards {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 }
