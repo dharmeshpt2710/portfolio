@@ -1,16 +1,40 @@
-# React + Vite
+# Dharmesh Patel - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site built with React and Vite, deployed to GitHub Pages.
 
-Currently, two official plugins are available:
+**Live:** [dharmeshpt2710.github.io/portfolio](https://dharmeshpt2710.github.io/portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- React 19 + Vite
+- Plain CSS with custom dark theme (Midnight Teal palette)
+- JetBrains Mono for accent typography
+- GitHub Actions for auto-deploy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sections
 
-## Expanding the ESLint configuration
+- **Hero** with monogram, status pill, and social links
+- **Stats** strip with key career metrics
+- **Experience** timeline with scroll-reveal animations
+- **Skills** grouped into 5 categories (QA first)
+- **Education** with CGPA highlights
+- **Contact** with availability status and direct links
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Build and Deploy
+
+```bash
+npm run build
+```
+
+Deploys automatically to GitHub Pages on push to `master` via `.github/workflows/deploy.yml`.
+
+## Accessibility
+
+WCAG 2.1 AA compliant: contrast ratios, 44px touch targets, semantic HTML, keyboard navigation, reduced motion support, and screen reader labels.
