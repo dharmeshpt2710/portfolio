@@ -43,7 +43,7 @@
 
 .project-number {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   color: var(--text-muted);
 }
@@ -85,7 +85,7 @@
   border-radius: 999px;
   border: 1px solid var(--accent-light);
   color: var(--accent-light);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   white-space: nowrap;
   text-decoration: none;
   flex-shrink: 0;
@@ -103,7 +103,7 @@
   border-radius: 999px;
   border: 1px solid var(--accent);
   color: var(--accent-soft);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   white-space: nowrap;
 }
 
@@ -169,7 +169,7 @@
   border: 1px solid var(--border);
   background: var(--bg);
   color: var(--text-body);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   white-space: nowrap;
   flex-shrink: 0;
 }

@@ -97,12 +97,14 @@ function Experience() {
     const items = timelineRef.current?.querySelectorAll('.exp-item')
     if (!items?.length) return
 
+    items[0].classList.add('exp-visible')
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('exp-visible')
-          } else {
+          } else if (entry.target !== items[0]) {
             entry.target.classList.remove('exp-visible')
           }
         })
@@ -110,7 +112,7 @@ function Experience() {
       { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }
     )
 
-    items.forEach((el) => observer.observe(el))
+    items.forEach((el, i) => { if (i > 0) observer.observe(el) })
     return () => observer.disconnect()
   }, [])
 
