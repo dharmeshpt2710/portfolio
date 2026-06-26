@@ -45,8 +45,3 @@
   color: var(--text-body);
   line-height: 1.7;
 }
-
-.kw {
-  color: var(--accent-soft);
-  font-weight: 600;
-}
