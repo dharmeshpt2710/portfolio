@@ -5,13 +5,14 @@ const K = ({ children }) => <span className="kw">{children}</span>
 
 const experience = [
   {
-    title: 'QA Developer I',
+    title: 'QA Developer',
     company: 'Innosoft Canada Inc.',
     location: 'Kitchener, ON, Canada',
     period: 'Jul 2023 to Apr 2026',
     bullets: [
       <>Reached <K>100% functional test coverage</K> each release and surfaced <K>50+ defects</K> before production by building and maintaining <K>40+ automated Playwright and Selenium tests</K> across the GUI and API layers of Fusion (InnoSoft's ERP), running <K>functional, regression, and k6 performance testing</K>, and validating data integrity with <K>SQL / SQL Profiler</K>.</>,
-      <>Cut new-test authoring time <K>~30%</K> (20 cases in 2 days vs. 3 to 5 manually) by building a <K>GenAI-powered Playwright codegen-to-POM pipeline</K> with <K>Claude AI</K>, while tracking defects in <K>JIRA / Zendesk</K> and mentoring a colleague on test automation practices.</>,
+      <>Cut new-test authoring time <K>~30%</K> (20 cases in 2 days vs. 3 to 5 manually) by building a <K>GenAI-powered Playwright codegen-to-POM(Page Object Model) pipeline</K> with <K>Claude AI</K>, while tracking defects in <K>JIRA / Zendesk</K>.</>,
+      <>Mentored a colleague by onboarding to the product, sharing knowledge, tips, and routine checks to help navigate tricky problems independently.</>,
     ],
     tags: ['Playwright', 'Selenium', 'C#', 'k6', 'SQL', 'Azure DevOps'],
   },
