@@ -43,14 +43,14 @@ const experience = [
     roles: [
       {
         title: 'Software Engineer',
-        period: 'Aug 2021 to Dec 2022',
+        period: 'Aug 2021 to Dec 2021',
         bullets: [
           <>Modernized a legacy codebase and reduced long-term maintenance overhead by migrating the Admin website from <K>AngularJS</K> to <K>Angular 11</K>, centralizing state with <K>NGRX Store</K>, and adding <K>Jasmine/Karma</K> unit tests to catch bugs earlier in the cycle.</>,
         ],
       },
       {
-        title: 'Software Engineer (Co-op)',
-        period: 'Jan 2021 to July 2021',
+        title: 'Software Engineer Intern',
+        period: 'Jan 2021 to Jul 2021',
         bullets: [
           <>Extended the B2B product to all screen sizes by migrating the website from <K>AngularJS</K> to <K>Angular 8</K> with mobile-responsive layouts, validating API contracts in <K>Postman</K>, and refactoring stylesheets to <K>SCSS</K> to cut duplication.</>,
         ],
